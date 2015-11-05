@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+            
+        <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='help.css')}}">
+    </head>
+    
+    <body>
+        <div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="{{url_for('main')}}">
+                        <img src="{{url_for('static', filename='Screen.png')}}">
+                        </a></li>
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('ad')}}">Gallery</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="{{url_for('sign_up')}}">Sign Up</a></li>
+                    <li><a href="{{url_for('log_in')}}">Log In</a></li>
+                    <li><a href="{{url_for('help')}}">Help</a></li>
+                </ul>
+                <br><br><br>
+            </div>
+        </div>
+        
+        <div class="thebody">
+            <h2>Hello to you all! If you see this than you probably got lost navigating in my site because you're in the</h2>
+            <h1 style="color: sandybrown">HELP PAGE</h1>
+            <br>
+            <p>Unfortenatlly, you are pretty much a lost case because you must be really really stupid if you couldn't manage to get along with this kind of website...<br>
+            Therefor, I woun't be wasting my preciaos time helping you. </p>
+            <br>
+            <p>Anyways, if you would like to contact me privately you can do so via email or whatsapp:
+            <br>email: hilush.tal@gmail.com
+            <br>whatsapp: 054-9183305</p>
+            <br><br>
+            <p id="one">P.S - hope you'll manage to get out from this page at least(ha-ha)</p>
+        </div>
+    </body>
+</html>

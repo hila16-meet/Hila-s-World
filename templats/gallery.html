@@ -1,0 +1,110 @@
+<html>
+    
+    <head>
+       <!-- <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+            
+        <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='gallery.css')}}">
+    </head>
+    
+    <body>
+        
+        <div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="{{url_for('main')}}">
+                        <img src="{{url_for('static', filename='Screen.png')}}">
+                        </a></li>
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('ad')}}">Gallery</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="{{url_for('sign_up')}}">Sign Up</a></li>
+                    <li><a href="{{url_for('log_in')}}">Log In</a></li>
+                    <li><a href="{{url_for('help')}}">Help</a></li>
+                </ul>
+                <br><br><br>
+            </div>
+        </div>
+        
+        
+        
+        
+    <!-- Carousel container -->
+    <div id="my-pics" class="carousel slide" data-ride="carousel">
+    
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#my-pics" data-slide-to="0" class="active"></li>
+            <li data-target="#my-pics" data-slide-to="1"></li>
+            <li data-target="#my-pics" data-slide-to="2"></li>
+            <li data-target="#my-pics" data-slide-to="3"></li>
+        </ol>
+    
+        <!-- Content -->
+        <div class="carousel-inner" role="listbox">
+        
+        <!-- Slide 1 -->
+        <div class="item active">
+            <img src="{{url_for('static', filename='slide1.JPG')}}">
+                <div class="carousel-caption">
+                    <h3>The back yard, Home</h3>
+                    <p style="color: lightseagreen">HER FACE THOUGH</p>
+                </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="item">
+            <img src="{{url_for('static', filename='slide2.JPG')}}">
+                <div class="carousel-caption">
+                    <h3>Infinidat, Herztelia</h3>
+                    <p style="color: lightcoral">WITH MY BRO</p>
+                </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="item">
+            <img src="{{url_for('static', filename='slide3.JPG')}}" class="rotate180">
+                <div class="carousel-caption">
+                    <h3>Kibuts Yifat, Jezreel Valley</h3>
+                    <p style="color: sandybrown">A WALK IN THE WOODS</p>
+                </div>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="item">
+            <img src="{{url_for('static', filename='slide4.JPG')}}">
+                <div class="carousel-caption">
+                    <h3>Nissi Beach, Cyprus</h3>
+                    <p style="color: lightseagreen">THERE'S JUST 1 THING BETTER THAN THE BEACH, ME</p>
+                </div>
+        </div>
+        
+    </div>
+    
+    <!-- Previous/Next controls -->
+    <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    
+    </div>
+
+<!-- Center the image -->
+<style scoped>
+    .item img
+    {
+        margin: 0 auto;
+    }
+</style>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

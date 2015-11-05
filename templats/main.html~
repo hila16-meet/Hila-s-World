@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!--<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+            
+        <link rel="stylesheet" href="bootstrap.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+                    
+    </head>
+    
+    <body>
+        <div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="{{url_for('main')}}">
+                        <img src="{{url_for('static', filename='Screen.png')}}">
+                        </a></li>
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('ad')}}">Gallery</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="{{url_for('sign_up')}}">Sign Up</a></li>
+                    <li><a href="{{url_for('log_in')}}">Log In</a></li>
+                    <li><a href="{{url_for('help')}}">Help</a></li>
+                </ul>
+                <br><br><br>
+            </div>
+        </div>
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Hila Tal's Website</h1>
+                <p>Learn & Discover everything there is to know about the legendary Hila</p>
+                <a href="{{url_for('about')}}">Learn More</a>
+            </div>
+        </div>
+                
+        <div class="neighborhood-guides">
+            <div class="container">
+                <h2>"One Picture Equals a Thousand Words"</h2>
+                <p>Not sure yet who am I exactly? Here are some pics which represents my interests</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img style="box-shadow: 0 0 18px lightcoral" src="http://biedermanblog.com/wp-content/uploads/2012/03/pi-swirl1.jpg" class="img-rounded">
+                        </div>
+                        <div class="thumbnail">
+                            <img style="box-shadow: 0 0 18px lightseagreen"src="http://www.venicecafechicago.com/wp-content/uploads/2014/07/venicea01.jpg" class="img-rounded">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img style="box-shadow: 0 0 18px sandybrown" src="https://picjumbo.imgix.net/HNCK4536.jpg?q=40&w=1650&sharp=30" class="img-rounded">
+                        </div>
+                        <div class="thumbnail">
+                            <img style="box-shadow: 0 0 18px lightcoral" src="http://h.fastcompany.net/multisite_files/fastcompany/imagecache/1280/fc_files/2012/1841365-theres-more-to-googles-artificial-brain-than-finding-cats-on-the-internet-rotator.jpg" class="img-rounded">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img style="box-shadow: 0 0 18px lightseagreen" src="{{url_for('static', filename='meetY2SummerProjectGroup.png')}}" class="img-rounded">
+                        </div>
+                        <div class="thumbnail">
+                            <img style="box-shadow: 0 0 18px sandybrown" src="http://www.telegraph.co.uk/travel/destination/czechrepublic/prague/article146790.ece/ALTERNATES/w460/charles-bridge-prague.jpg" class="img-rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+                <div class="learn-more">
+                <div class="container">
+                <div class="row">
+                <div class="col-md-4">
+                <h3 style="color: lightcoral">Basic Information</h3>
+                <p>
+                <ul>
+                <li>Date of Birth: April 22nd, 1999</li>
+                <li>Place of Residence: Kibuts Yifat</li>
+                <li>Majors in School: CS and Physics</li>
+                <li>Music Taste: Pop, Hip Hop and R&B</li>
+                <li>Pets:
+                <ol>
+                <li>Kookla - female mixed Labrador</li>
+                <li>Prenchi - female mixed Chihuahua</li>
+                </ol>
+                </li>
+                <li>Languages: Hebrew and English</li>
+                <li>Programming Languages: Java, Python, HTML&CSS</li>
+                </ul>
+                </p>
+                <p><a href="#">Learn more about me</a></p>
+                <p><a href="#">ask me for more details</a></p>
+                </div>
+                <div class="col-md-4">
+                <h3 style="color: lightseagreen">Education</h3>
+                <p>I've been moving through lots of differnt schools during my live, including "Durant Road", NC, and for the moment I'm studing in "Haemek Hamaaravi", Jezreel Valley. In addition I'm also a student in the amazing organization "meet" </p>
+                <p><a href="#">Learn more about my biography</a></p>
+                </div>
+                <div class="col-md-4">
+                <h3 style="color: sandybrown">Favorite Quotes</h3>
+                <p>
+                "Sometimes it is the people who no one imagines anything of who do the things that no one can imagine" <br><br>
+                "Work hard in silence, let success make the noise" <br><br>
+                "The only time SUCCESS comes before WORK is in the DICTIONARY" <br><br>
+                "The people who are crazy enough to think they can change the world are the ones who do"
+                <br>
+                </p>
+                <p><a href="#">View more quotes</a></p>
+                </div>
+                </div>
+                </div>
+                </div>
+        </body>
+</html>

@@ -1,0 +1,80 @@
+body
+{
+    background-image: url('http://wallpapersdesk.net/wp-content/uploads/2015/03/1652_space.jpg');
+}
+
+.nav
+{
+    background-color: #f7f7f7;
+    border-bottom-style: solid;
+}
+
+.nav a
+{
+    color: #5a5a5a;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}
+
+.nav li
+{
+    display: inline;
+}
+
+.nav img
+{
+    width: 40px;
+    height: 30px;
+}
+
+.thebody
+{
+    background-color: #f7f7f7;
+    position: relative;
+    font-family: Geneva;
+    font-weight: bold;
+    padding: 14px 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+.thebody .check
+{
+    margin-right: 1162px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+#three
+{
+    color: #5a5a5a;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.title
+{
+    text-align: center;
+    background-color: #f7f7f7;
+    position: relative;
+    font-family: Geneva;
+    font-weight: bold;
+    padding: 14px 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    
+}
+
+.thebody img
+{
+    width: 300px;
+    height: 200px;
+}

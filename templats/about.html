@@ -1,0 +1,39 @@
+<html>
+    
+    <head>
+       <!-- <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+            
+        <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='about.css')}}">
+    </head>
+    
+    <body>
+        <div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="{{url_for('main')}}">
+                        <img src="{{url_for('static', filename='Screen.png')}}">
+                        </a></li>
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('ad')}}">Gallery</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="{{url_for('sign_up')}}">Sign Up</a></li>
+                    <li><a href="{{url_for('log_in')}}">Log In</a></li>
+                    <li><a href="{{url_for('help')}}">Help</a></li>
+                </ul>
+                <br><br><br>
+            </div>
+        </div>
+        
+        <div class="sometext">
+            <marquee direction="left" scrollamount="6.5"><p>The page is still on building but meanwhile you can enjoy viewing my new logo!</p></marquee>
+        </div>
+        
+        
+        
+        
+        
+    </body>
+    
+</html>

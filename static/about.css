@@ -1,0 +1,47 @@
+.nav
+{
+    background-color: #f7f7f7;
+}
+
+.nav a
+{
+    color: #5a5a5a;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}
+
+.nav li
+{
+    display: inline;
+}
+
+.nav img
+{
+    width: 40px;
+    height: 30px;
+}
+
+body
+{
+    background-image: url('Screen Shot 2015-08-30 at 7.10.24 PM.png');
+    background-repeat: right center;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 160px 110.55px;
+}
+
+.sometext
+{
+    background-image: url('http://wallpapersdesk.net/wp-content/uploads/2015/03/1652_space.jpg');
+    color: white;
+    font-family: Geneva;
+    font-weight: bold;
+}
+
+.sometext p
+{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
